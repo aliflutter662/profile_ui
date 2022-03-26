@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:profile_ui/newpage.dart';
 import 'package:profile_ui/profile.dart';
 
 void main() {

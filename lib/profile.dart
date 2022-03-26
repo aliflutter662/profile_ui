@@ -93,154 +93,163 @@ class _ProfilePageState extends State<ProfilePage> {
                       ],
                     ),
                   ),
-                  Column(
-                    children: [
-                      ExpansionTile(
-                        title: Row(
-                          children: [
-                            Icon(
-                              Icons.person,
-                              color: Colors.grey,
+                  SingleChildScrollView(
+                    scrollDirection: Axis.vertical,
+                    child: Column(
+                      children: [
+                        ExpansionTile(
+                          title: Row(
+                            children: [
+                              Icon(
+                                Icons.person,
+                                color: Colors.grey,
+                              ),
+                              SizedBox(
+                                width: 10,
+                              ),
+                              Text(
+                                'My Profile',
+                                style: TextStyle(color: Colors.indigo[400]),
+                              )
+                            ],
+                          ),
+                          children: <Widget>[
+                            ListTile(
+                              title: Padding(
+                                padding:
+                                    const EdgeInsets.only(left: 18, right: 12),
+                                child: Row(
+                                  children: [
+                                    Icon(
+                                      Icons.person,
+                                      color: Colors.grey,
+                                    ),
+                                    SizedBox(
+                                      width: 10,
+                                    ),
+                                    Text(
+                                      'First name',
+                                      style:
+                                          TextStyle(color: Colors.indigo[400]),
+                                    ),
+                                    SizedBox(
+                                      width: 70,
+                                    ),
+                                    Icon(
+                                      Icons.person,
+                                      color: Colors.grey,
+                                    ),
+                                    SizedBox(
+                                      width: 10,
+                                    ),
+                                    Text(
+                                      'Last name',
+                                      style:
+                                          TextStyle(color: Colors.indigo[400]),
+                                    )
+                                  ],
+                                ),
+                              ),
                             ),
-                            SizedBox(
-                              width: 10,
+                            ListTile(
+                              title: Padding(
+                                padding:
+                                    const EdgeInsets.only(left: 18, right: 12),
+                                child: Row(
+                                  children: [
+                                    Icon(
+                                      Icons.email,
+                                      color: Colors.grey,
+                                    ),
+                                    SizedBox(
+                                      width: 10,
+                                    ),
+                                    Text(
+                                      'Email',
+                                      style:
+                                          TextStyle(color: Colors.indigo[400]),
+                                    ),
+                                    SizedBox(
+                                      width: 50,
+                                    ),
+                                    Icon(
+                                      Icons.phone,
+                                      color: Colors.grey,
+                                    ),
+                                    SizedBox(
+                                      width: 10,
+                                    ),
+                                    Text(
+                                      'Phone Number',
+                                      style:
+                                          TextStyle(color: Colors.indigo[400]),
+                                    )
+                                  ],
+                                ),
+                              ),
                             ),
-                            Text(
-                              'My Profile',
-                              style: TextStyle(color: Colors.indigo[400]),
-                            )
+                            // ListTile(
+                            //   title: Padding(
+                            //     padding:
+                            //         const EdgeInsets.only(left: 18, right: 12),
+                            //     child: Row(
+                            //       children: [
+                            //         Icon(
+                            //           Icons.phone,
+                            //           color: Colors.grey,
+                            //         ),
+                            //         SizedBox(
+                            //           width: 10,
+                            //         ),
+                            //         Text(
+                            //           'Phone Number',
+                            //           style: TextStyle(color: Colors.indigo[400]),
+                            //         )
+                            //       ],
+                            //     ),
+                            //   ),
+                            // ),
+                            ListTile(
+                              title: Padding(
+                                padding:
+                                    const EdgeInsets.only(left: 18, right: 12),
+                                child: Row(
+                                  children: [
+                                    Icon(
+                                      Icons.house,
+                                      color: Colors.grey,
+                                    ),
+                                    SizedBox(
+                                      width: 10,
+                                    ),
+                                    Text(
+                                      'City',
+                                      style:
+                                          TextStyle(color: Colors.indigo[400]),
+                                    ),
+                                    SizedBox(
+                                      width: 70,
+                                    ),
+                                    Icon(
+                                      Icons.flag,
+                                      color: Colors.grey,
+                                    ),
+                                    SizedBox(
+                                      width: 10,
+                                    ),
+                                    Text(
+                                      'Country',
+                                      style:
+                                          TextStyle(color: Colors.indigo[400]),
+                                    )
+                                  ],
+                                ),
+                              ),
+                            ),
                           ],
                         ),
-                        children: <Widget>[
-                          ListTile(
-                            title: Padding(
-                              padding:
-                                  const EdgeInsets.only(left: 18, right: 12),
-                              child: Row(
-                                children: [
-                                  Icon(
-                                    Icons.person,
-                                    color: Colors.grey,
-                                  ),
-                                  SizedBox(
-                                    width: 10,
-                                  ),
-                                  Text(
-                                    'First name',
-                                    style: TextStyle(color: Colors.indigo[400]),
-                                  ),
-                                  SizedBox(
-                                    width: 70,
-                                  ),
-                                  Icon(
-                                    Icons.person,
-                                    color: Colors.grey,
-                                  ),
-                                  SizedBox(
-                                    width: 10,
-                                  ),
-                                  Text(
-                                    'Last name',
-                                    style: TextStyle(color: Colors.indigo[400]),
-                                  )
-                                ],
-                              ),
-                            ),
-                          ),
-                          ListTile(
-                            title: Padding(
-                              padding:
-                                  const EdgeInsets.only(left: 18, right: 12),
-                              child: Row(
-                                children: [
-                                  Icon(
-                                    Icons.email,
-                                    color: Colors.grey,
-                                  ),
-                                  SizedBox(
-                                    width: 10,
-                                  ),
-                                  Text(
-                                    'Email',
-                                    style: TextStyle(color: Colors.indigo[400]),
-                                  ),
-                                  SizedBox(
-                                    width: 50,
-                                  ),
-                                  Icon(
-                                    Icons.phone,
-                                    color: Colors.grey,
-                                  ),
-                                  SizedBox(
-                                    width: 10,
-                                  ),
-                                  Text(
-                                    'Phone Number',
-                                    style: TextStyle(color: Colors.indigo[400]),
-                                  )
-                                ],
-                              ),
-                            ),
-                          ),
-                          // ListTile(
-                          //   title: Padding(
-                          //     padding:
-                          //         const EdgeInsets.only(left: 18, right: 12),
-                          //     child: Row(
-                          //       children: [
-                          //         Icon(
-                          //           Icons.phone,
-                          //           color: Colors.grey,
-                          //         ),
-                          //         SizedBox(
-                          //           width: 10,
-                          //         ),
-                          //         Text(
-                          //           'Phone Number',
-                          //           style: TextStyle(color: Colors.indigo[400]),
-                          //         )
-                          //       ],
-                          //     ),
-                          //   ),
-                          // ),
-                          ListTile(
-                            title: Padding(
-                              padding:
-                                  const EdgeInsets.only(left: 18, right: 12),
-                              child: Row(
-                                children: [
-                                  Icon(
-                                    Icons.house,
-                                    color: Colors.grey,
-                                  ),
-                                  SizedBox(
-                                    width: 10,
-                                  ),
-                                  Text(
-                                    'City',
-                                    style: TextStyle(color: Colors.indigo[400]),
-                                  ),
-                                  SizedBox(
-                                    width: 70,
-                                  ),
-                                  Icon(
-                                    Icons.flag,
-                                    color: Colors.grey,
-                                  ),
-                                  SizedBox(
-                                    width: 10,
-                                  ),
-                                  Text(
-                                    'Country',
-                                    style: TextStyle(color: Colors.indigo[400]),
-                                  )
-                                ],
-                              ),
-                            ),
-                          ),
-                        ],
-                      ),
-                    ],
+                      ],
+                    ),
                   ),
                   ExpansionTile(
                     title: Row(
@@ -320,8 +329,10 @@ class _ProfilePageState extends State<ProfilePage> {
               )
             ],
           ),
-          Padding(
-            padding: EdgeInsets.only(bottom: 300, left: 154),
+          Positioned(
+            top: 250,
+            left: 135,
+            right: 0,
             child: CircleAvatar(
               backgroundColor: Colors.black54,
               child: IconButton(
